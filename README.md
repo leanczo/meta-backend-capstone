@@ -49,7 +49,7 @@ http://localhost:8000/api/menu/1
 GET in 
 http://localhost:8000/api/menu
 
-- Add all menus
+- Get all menus
 
 POST http://localhost:8000/api/menu/
 
