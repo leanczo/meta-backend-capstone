@@ -77,6 +77,20 @@ Add authorization to the endpoints, so you have to send a header in the request 
 pip install djoser
 ```
 
-navigate to http://127.0.0.1:8000/auth/token/login/ to get the token
-user: "super"
+navigate to http://127.0.0.1:8000/auth/token/login/ to get the token  
+```
+user: "super  
 password: "123"
+```
+
+use http://127.0.0.1:8000/auth/token/logout/ to logout with the token in the header
+
+## Testing
+```bash
+python manage.py test
+```
+
+```sql
+GRANT ALL PRIVILEGES ON `test_littlelemon`.* TO 'django'@'localhost';
+FLUSH PRIVILEGES;
+```
