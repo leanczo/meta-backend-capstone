@@ -36,7 +36,7 @@ pip3 install djangorestframework
 ```
 
 GET in 
-http://localhost:8000/restaurant/menu/1
+http://localhost:8000/api/menu/1
 
 ```json
 {
@@ -47,12 +47,12 @@ http://localhost:8000/restaurant/menu/1
 }
 ```
 GET in 
-http://localhost:8000/restaurant/menu
+http://localhost:8000/api/menu
 
 - Add all menus
 
 GET in 
-http://localhost:8000/restaurant/booking/tables
+http://localhost:8000/api/booking/tables
 
 ```json
 [
@@ -64,5 +64,11 @@ http://localhost:8000/restaurant/booking/tables
     }
 ]
 ```
+POST http://localhost:8000/api/api-token-auth/
+```json
+{
+    "token": "a9d223579062329a541eb8eb8206c52c8b15c974"
+}
+```
 
-
+Add authorization to the endpoints, so you have to send a header in the request with the Authorization title: Token [VALUE]
