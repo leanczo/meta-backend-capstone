@@ -31,6 +31,8 @@ user:super
 email: super@gmail.com
 password: 123
 
+pip3 install djangorestframework
+
 
 ```
 
