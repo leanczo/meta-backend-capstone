@@ -10,7 +10,7 @@ def index(request):
 
 # Create your views here. 
 class MenuItemsView(generics.ListCreateAPIView):
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer
 
