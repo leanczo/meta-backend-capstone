@@ -33,7 +33,19 @@ password: 123
 
 pip3 install djangorestframework
 
-
 ```
+
+GET in 
+http://localhost:8000/restaurant/menu/1
+
+```json
+{
+    "id": 1,
+    "title": "Menu 1",
+    "price": "123.00",
+    "inventory": 4
+}
+```
+
 
 
