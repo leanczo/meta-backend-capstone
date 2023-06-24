@@ -94,3 +94,29 @@ python manage.py test
 GRANT ALL PRIVILEGES ON `test_littlelemon`.* TO 'django'@'localhost';
 FLUSH PRIVILEGES;
 ```
+
+To execute the available unittests, please open the Visual Studio terminal and enter the following command: python manage.py test tests/.
+Please ensure that you have activated the virtual environment and navigated into the 'littlelemon' directory prior to running the unit-tests command.
+
+Utilize this path to verify that the web application is serving static HTML content, inclusive of images and styling.
+/restaurant
+
+For testing, you can make use of the following API endpoints with Insomnia or Postman clients.
+Alternatively, feel free to explore them through your browser of choice.
+
+DJOSER endpoint, for instance, to perform a POST request and register a new user.
+/auth/users/
+
+To log in and obtain an authentication token.
+/api-token-auth/
+
+To log in using the DJOSER endpoint.
+/auth/token/login
+
+Menu items
+/api/menu/
+/api/menu/{menuItemId}
+
+Table reservations
+/api/booking/tables/
+/api/booking/tables/{bookingId}
