@@ -26,7 +26,10 @@ GRANT ALL PRIVILEGES ON littlelemon.* TO 'django'@'localhost';
 python3 manage.py migrate 
 python3 manage.py makemigrations
 
-
+python manage.py createsuperuser
+user:super
+email: super@gmail.com
+password: 123
 
 
 ```
