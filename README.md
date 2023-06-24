@@ -72,3 +72,11 @@ POST http://localhost:8000/api/api-token-auth/
 ```
 
 Add authorization to the endpoints, so you have to send a header in the request with the Authorization title: Token [VALUE]
+
+```bash
+pip install djoser
+```
+
+navigate to http://127.0.0.1:8000/auth/token/login/ to get the token
+user: "super"
+password: "123"
