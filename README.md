@@ -14,7 +14,21 @@ django-admin startproject littlelemon
 cd littlelemon
 python manage.py runserver
 -- create a django app 
-python manage.py startapp restaurant  
+python manage.py startapp restaurant
+
+pip3 install mysqlclient
+
+create database littlelemon;
+use littlelemon;
+
+CREATE USER 'django'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON littlelemon.* TO 'django'@'localhost';
+python3 manage.py migrate 
+python3 manage.py makemigrations
+
+
+
+
 ```
 
 
