@@ -1,4 +1,4 @@
-# meta-backend-capstone
+# Meta Backend Capstone
 This is a capstone project for the Meta Back-End Development course
 
 # Commands
@@ -50,6 +50,27 @@ GET in
 http://localhost:8000/api/menu
 
 - Add all menus
+
+POST http://localhost:8000/api/menu/
+
+BODY
+```json
+{
+    "title": "Menu 2",
+    "price": "123.00",
+    "inventory": 3
+}
+```
+RESULT
+```json
+{
+    "id": 2,
+    "title": "Menu 2",
+    "price": "123.00",
+    "inventory": 3
+}
+```
+
 
 GET in 
 http://localhost:8000/api/booking/tables
